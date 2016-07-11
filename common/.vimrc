@@ -47,6 +47,10 @@ set pastetoggle=<F2>
 " Unhilight on F12
 :nnoremap <F12> :noh<CR>
 
+" Insert unicode ✓ and ✗!
+imap <F5> <C-V>u2713
+imap <F6> <C-V>u2717
+
 " vim-airline
 let g:airline_powerline_fonts=1
 set laststatus=2
