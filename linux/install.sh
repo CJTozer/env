@@ -33,6 +33,10 @@ install vim
 install tmux
 install git
 install python-pip
+install zsh
 
 # Install python packages
 $sudo pip install -r pip_requirements.txt
+
+# Install oh-my-zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
