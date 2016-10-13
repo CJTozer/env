@@ -18,3 +18,14 @@ antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-
 
 # Tell antigen that you're done.
 antigen apply
+
+
+# Alias
+alias cdb='cd $CB_ROOT'
+
+# FZF
+source ~/.fzf.zsh
+
+# Terminal type
+export TERM="xterm-256color"
+
