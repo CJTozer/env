@@ -4,6 +4,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        pager = less -FRSX
 [alias]
         st = status
         co = checkout
