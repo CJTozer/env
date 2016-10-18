@@ -1,3 +1,9 @@
+if [ ! -d ~/antigen ]
+then
+  echo Cloning antigen into ~/antigen
+  git clone https://github.com/zsh-users/antigen.git ~/antigen
+fi
+
 source ~/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
