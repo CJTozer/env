@@ -1,12 +1,10 @@
 if [ ! -d ~/antigen ]
 then
-  echo Cloning antigen into ~/antigen
+  echo --- Cloning antigen into ~/antigen ---
   git clone https://github.com/zsh-users/antigen.git ~/antigen
 fi
-
 source ~/antigen/antigen.zsh
 
-# Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
 # # Bundles from the default repo (robbyrussell's oh-my-zsh).
@@ -30,6 +28,12 @@ antigen apply
 alias cdb='cd $CB_ROOT'
 
 # FZF
+if [ ! -f ~/.fzf.zsh ]
+then
+  echo --- Installing fzf ---
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+fi
 source ~/.fzf.zsh
 
 # Terminal type
