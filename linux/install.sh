@@ -9,7 +9,7 @@ then
   installer=apt-get
 else
   echo "No yum or apt-get; giving up"
-  #exit 1
+  exit 1
 fi
 
 # Decide whether to sudo
