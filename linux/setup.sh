@@ -18,6 +18,9 @@ write linux/git-completion.bash ~/git-completion.bash
 append linux/.bashrc ~/.bashrc
 . ~/.bashrc
 
+# zsh
+write linux/.zshrc ~/.zshrc
+
 # Install things
 run linux/install.sh
 
